@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "fund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"fundme/InteractWithFundMe.sol": "InteractWithFundMe"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x6e6e4b0835904509406b070ee173b5bc8f677c19421b76be38aea3b1b3d30846",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b3beaa37ee61e4ab615e250fbf01601ae481de843fd0ef55e6b44fd9d5fff8a7",
+				"dweb:/ipfs/QmeZUVwd26LzK4Mfp8Zba5JbQNkZFfTzFu1A6FVMMZDg9c"
+			]
+		},
+		"fundme/FundMe.sol": {
+			"keccak256": "0xc08410a4b7f56b67ba9bb6e8e56a34fa3e1fae39ac4c140a37df25d5fed7b207",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://afd15fff4876a746066901b7a5c26dc7e53deddbb8fe1e3f0b80b69025888227",
+				"dweb:/ipfs/QmeJFD9fcpWrmpoHLErzrDkMAnT9MWhBrtBXWjYfqHd7S3"
+			]
+		},
+		"fundme/FundMeLibrary.sol": {
+			"keccak256": "0x051b3da2d0a308929c3120273eace1d4ac64edf020f125056777dec8d6e3fc47",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://34222a2c723edef31ca0a9f9f6fc3dc698caf407c29264e7150019f586f51e8d",
+				"dweb:/ipfs/QmTz8LE3N7sHdJmMxksFbjJNJXMYniZzTcjfQDcRiaq3Gp"
+			]
+		},
+		"fundme/InteractWithFundMe.sol": {
+			"keccak256": "0x4fb363816e85f9291b36c1b2a35136578099ba0ae22e6ca852c55be5f6bf1d73",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0ba38e54252d221be6f49fa496bb5ec42c210c738358da4d682199079e545dee",
+				"dweb:/ipfs/QmZAJ8d2Xs9iEM22S6VjfcW4qbtWpewqhPVWubdEMBMbGg"
+			]
+		}
+	},
+	"version": 1
+}

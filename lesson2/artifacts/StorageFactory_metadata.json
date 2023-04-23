@@ -1,0 +1,100 @@
+{
+	"compiler": {
+		"version": "0.8.8+commit.dddeac2f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "assignContractToVariable",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "simpleStorage",
+				"outputs": [
+					{
+						"internalType": "contract SimpleStorage",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_number",
+						"type": "uint256"
+					}
+				],
+				"name": "storeNumberInContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "storeNumberInOtherContract",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lesson2/StorageFactory.sol": "StorageFactory"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lesson2/SimpleStorage.sol": {
+			"keccak256": "0xb21c8feefa259a4c654dcfc71b948134fd7010b23a5f637015189503ff082cb0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f8561dc6372bffbf4f3965d2b7f703e90f6523c02bcf66658756fd5a14948e1d",
+				"dweb:/ipfs/QmYr8dD5wss9nc7auKjqwZ3dZeUN2iDVNCU8RfLbaGuggi"
+			]
+		},
+		"lesson2/StorageFactory.sol": {
+			"keccak256": "0x56cb332010e3d0755951653a62ec565c212b97760d5e4cf2844a0862576a9941",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0799fcb9fe8f40b1721438f558e63432415e192a7c0c21f907849eab181d8b23",
+				"dweb:/ipfs/QmfCntmQYk3owo5RYHAuWCnsxGVJ73M3PYizAFoHyegpE9"
+			]
+		}
+	},
+	"version": 1
+}
