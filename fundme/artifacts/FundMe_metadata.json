@@ -12,8 +12,17 @@
 			},
 			{
 				"inputs": [],
+				"name": "insufficientBalance",
+				"type": "error"
+			},
+			{
+				"inputs": [],
 				"name": "notOwner",
 				"type": "error"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
 			},
 			{
 				"inputs": [
@@ -92,6 +101,10 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -130,11 +143,11 @@
 			]
 		},
 		"fundme/FundMe.sol": {
-			"keccak256": "0x5ec31dba2a4a59485024265fbf7017ee9fdd2a020947f19293c2c85613ad20b0",
+			"keccak256": "0x0c42569b8566482fe4eae1165664d2ae47166c669fb138fa439ef2344d369a48",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8346404970c69305a865d9d98b2d5a69b5becd2af7444d5cad19eea96849c44c",
-				"dweb:/ipfs/QmY3UrZxo5fK52xDXRNawnLkjqG8exdhcFDAnaNK3bDM1u"
+				"bzz-raw://eebcb251e35a3d676c266cdc84f8c0e74f9e137c73826e6ad326d5ac591d8238",
+				"dweb:/ipfs/QmS5o1eRm2gfpab9YbmzEaVz7sVvVT54i42vUAX4NsYYXx"
 			]
 		},
 		"fundme/FundMeLibrary.sol": {

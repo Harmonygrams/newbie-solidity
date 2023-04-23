@@ -2,6 +2,8 @@
 pragma solidity ^0.8.0;
 import "./FundMeLibrary.sol";
 error notOwner();
+error insufficientBalance();
+
 contract FundMe {
     using FundMeLibrary for uint256;
     address[] public funders;
@@ -23,10 +25,12 @@ contract FundMe {
     }
     //chainlink contract
     function fund () public payable  {
-        //check if the amount if good 
-        require(msg.value.convertWeiToUSD() >= minimumUsd, "Didn't send");
-        funders.push(msg.sender);
-        addressToAmount[msg.sender] = msg.value;
+        //check if the amount is more than 50USD 
+        if(msg.value.convertWeiToUSD() >= minimumUsd){
+            funders.push(msg.sender);
+            addressToAmount[msg.sender] = msg.value;
+        }
+        revert insufficientBalance();
     }
     function withdraw () public onlyOwner {
         //reset wallet addresses 
@@ -40,5 +44,15 @@ contract FundMe {
     }
     function viewContractAddress () public view returns(address){
         return address(this);
+    }
+    /*
+        If the user makes a transaction without calling the fund function directly, 
+        any of these functions will be executed
+    */
+    receive() external payable  {
+        fund();
+    }
+    fallback() external payable {
+        fund();
     }
 }
